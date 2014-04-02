@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
-
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC -all_load' }
   s.source_files = 'Library/*.{h,m}'
 end
